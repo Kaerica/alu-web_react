@@ -14,5 +14,5 @@ $(document).ready(() => {
   $('body').append('<button>Click here to get started</button>');
   $('body').append('<p id="count"></p>');
 
-  $('button').on('click', _.debounce(updateCounter, 300));
+  $('button').on('click', _.debounce(updateCounter, 300, { leading: true, trailing: false }));
 });
