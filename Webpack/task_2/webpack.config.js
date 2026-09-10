@@ -34,8 +34,8 @@ module.exports = {
           options: {
             plugins: [
               ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
+              ['mozjpeg', { quality: 75 }],
+              ['pngquant', { quality: [0.65, 0.9] }],
               [
                 'svgo',
                 {
@@ -57,4 +57,10 @@ module.exports = {
       }),
     ],
   },
-};
+
+  performance: {
+    maxAssetSize: 100000,
+    maxEntrypointSize: 100000,
+  },
+};O
+
