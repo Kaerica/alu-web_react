@@ -1,5 +1,6 @@
 const path = require('path');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -58,9 +59,15 @@ module.exports = {
     ],
   },
 
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Holberton Dashboard',
+    }),
+  ],
+
   performance: {
-    maxAssetSize: 100000,
-    maxEntrypointSize: 100000,
+    maxAssetSize: 250000,
+    maxEntrypointSize: 250000,
   },
-};O
+};
 
