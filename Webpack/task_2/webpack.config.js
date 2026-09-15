@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -9,7 +8,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    clean: true,
   },
 
   module: {
@@ -44,12 +42,6 @@ module.exports = {
       },
     ],
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Holberton Dashboard',
-    }),
-  ],
 
   performance: {
     maxAssetSize: 250000,
