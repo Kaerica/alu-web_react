@@ -1,0 +1,7 @@
+node_modules/
+React_Immutable/node_modules/
+React_inline_styling/node_modules/
+package-lock.json
+npm-debug.log*
+*.log
+*.tmp
