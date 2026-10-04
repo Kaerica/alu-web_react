@@ -1,0 +1,11 @@
+.App-body {
+  padding: 36px 24px;
+  min-height: 50vh;
+}
+
+.App-footer {
+  border-top: 3px solid #e0354b;
+  text-align: center;
+  font-style: italic;
+  padding: 8px 0;
+}

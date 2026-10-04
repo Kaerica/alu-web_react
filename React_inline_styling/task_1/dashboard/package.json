@@ -1,0 +1,43 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Holberton School dashboard - React inline styling",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "start": "webpack serve --config config/webpack.config.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(jpg|jpeg|png|gif|ico|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "aphrodite": "^2.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "jest": "^26.6.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}

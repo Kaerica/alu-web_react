@@ -1,0 +1,19 @@
+.menuItem {
+  text-align: right;
+}
+
+.Notifications {
+  float: right;
+  width: 40%;
+  border: 2px dashed #e0354b;
+  padding: 6px 12px;
+  margin: 0 8px 8px 0;
+}
+
+[data-notification-type="default"] {
+  color: blue;
+}
+
+[data-notification-type="urgent"] {
+  color: red;
+}
