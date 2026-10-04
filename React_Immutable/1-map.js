@@ -1,7 +1,7 @@
 import { Map } from 'immutable';
 
-export function getImmutableObject(object) {
+export default function getImmutableObject(object) {
   return Map(object);
 }
 
-export default getImmutableObject;
+export { getImmutableObject };
